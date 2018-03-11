@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:orientation="horizontal">
 <LinearLayout
-    android:layout_width="1dp"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:orientation="vertical">
     <TextView
@@ -16,6 +16,10 @@
     android:layout_height="wrap_content"
     android:text="First City"
     android:padding="4dp" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second City">
 
     <TextView
     android:id="@+id/unit_aa"
@@ -35,31 +39,38 @@
         android:layout_height="wrap_content"
         android:text="unit_C"
         android:layout_margin="8dp"/>
+</LinearLayout>
     <LinearLayout
-        android:layout_width="1dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:orientation="vertical">
         <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="option 1">
+            android:id="@+id/option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="option 1"
+            android:entries="@array/option1"
+            >
         </Spinner>
         <Spinner
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="option 2">
         </Spinner>
         <Spinner
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="option 3">
         </Spinner>
+    </LinearLayout>
         <LinearLayout
-        android:layout_width="1dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second City"/>
         <TextView
             android:id="@+id/unit_ab"
             android:layout_width="wrap_content"
@@ -78,8 +89,5 @@
             android:layout_height="wrap_content"
             android:text="unit_C"
             android:layout_margin="8dp"/>
-
-    </LinearLayout>
-    </LinearLayout>
     </LinearLayout>
     </LinearLayout>
