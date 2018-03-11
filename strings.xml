@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GrassIsGreener</string>
+    <string-array name="option1">
+    <item>test</item>
+    <item>test2</item>
+    </string-array>
+</resources>
